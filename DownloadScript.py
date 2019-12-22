@@ -45,4 +45,4 @@ if __name__ == "__main__":
     tempDir = 'C:\\Temp\\'
     downloadDir = tempDir
     os.chdir(downloadDir)
-    download_files.download_proper_file('18z_dH27PYE90SnrT_P9vcC6lMf7abnhK', './CompatScan.exe')
+    download_files.download_proper_file('ID', './CompatScan.exe')
