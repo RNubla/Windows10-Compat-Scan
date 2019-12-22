@@ -123,7 +123,7 @@ if __name__ == "__main__":
     # if platform.architecture()[0] == "32bit":
     if get_os_architecture.os_version() == 32:
         print('32 Bit')
-        download_files.download_proper_file('1jHQDJiqgLBAjpD3lsSTx37XWesphPa2i', './Compat32.zip')
+        download_files.download_proper_file('ID', './Compat32.zip')
         ExtractZip.extract_win('Compat32.zip')
         current_dir = os.path.normpath(os.getcwd())
         RunCompatScans.compat_scan((current_dir + os.sep + 'Win1032'))
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     # elif platform.architecture()[0] == "64bit":
     elif get_os_architecture.os_version() == 64:
         print('64 Bit')
-        download_files.download_proper_file('1te-8WRROCyIths4PM7q0nR4pT7RWDIpQ', './Compat64.zip')
+        download_files.download_proper_file('ID', './Compat64.zip')
         ExtractZip.extract_win('Compat64.zip')
         current_dir = os.path.normpath(os.getcwd())
         RunCompatScans.compat_scan(current_dir + os.sep + 'Win1064')
