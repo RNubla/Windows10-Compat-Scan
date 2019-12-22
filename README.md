@@ -1,5 +1,5 @@
 # Windows10-Compat-Scan
-Windows 10 Compat Scan is a tool used at work to check for Windows 7 machines that are eligible for Windows 10 upgrade.
+Windows 10 Compat Scan is a tool used at work to check for Windows 7 machines that are eligible for Windows 10 upgrade. This is a very helpful tool for IT specially for those who are using RMM such as Atera. This tool is a huge time saver for both customer and IT support.This tool can be run in the background when using Atera's cmd tools. Ideally, this tool should be compiled to a 32bit exe using pyinstaller.
 ### Steps in order to use this.
 1. Download [7zip](https://www.7-zip.org/download.html)
 2.Download and extract Windows 10 ISO (32bit and 64bit) into a folder called Win1064 and Win1032 respectively.
