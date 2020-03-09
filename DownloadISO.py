@@ -1,6 +1,7 @@
 import wget
 import fire
 import os
+import platform
 import sys
 import re
 from bs4 import BeautifulSoup
@@ -11,7 +12,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome('./chromedriver')
+# driver = webdriver.Chrome('./chromedriver') for OSX
+driver = webdriver.Chrome('./chromedriver.exe') #for Windows
 # driver = webdriver.Safari()
 class AutomateWeb(object):
     
@@ -47,6 +49,13 @@ class AutomateWeb(object):
         WebDriverWait(driver, 50).until(EC.visibility_of_element_located((By.TAG_NAME, '64-bit')))
 
         driver.find_element_by_class_name('button button-long button-flat button-purple x-hidden-focus').click()
+
+#For Debugging since I switch platform between Windows and OSX
+class Check_OS():
+    def os_check(self):
+        if platform == 'win32':
+            print('Windows')
+
         
 
 class Program(object):
@@ -56,4 +65,5 @@ class Program(object):
         filename = wget.download(link)
 
 if __name__ == '__main__':
+    # Check_OS.os_check()
     fire.Fire(AutomateWeb)
