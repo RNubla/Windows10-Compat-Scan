@@ -11,8 +11,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-# driver = webdriver.Chrome('./chromedriver')
-driver = webdriver.Safari()
+driver = webdriver.Chrome('./chromedriver')
+# driver = webdriver.Safari()
 class AutomateWeb(object):
     
     def winISO(self):
