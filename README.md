@@ -11,7 +11,7 @@ Windows 10 Compat Scan is a tool used at work to check for Windows 7 machines th
 7. Run the CompatScan.py and this would return an output on the terminal or cmd
 
 
-#TODO #Tool Revamp
+#TODO # **Tool Revamp
 - [ ] Enable the use of Internet Explorer
 - [ ] If Chrome is not downloaded, allow for automatic installation of Chrome.
     - [ ] Check for installed Web Browsers
