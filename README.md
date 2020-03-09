@@ -9,3 +9,11 @@ Windows 10 Compat Scan is a tool used at work to check for Windows 7 machines th
 5. Create a shareable link of the zip files. Make sure set the settings of the zip files is set to public or sharable to those who has the link.
 6. Copy the ID of the file and paste it to the respected section of the code. i.e. get the sharable link ID of the 32 bit zip and paste it on the corresponding code. Same goes with 64 bit.
 7. Run the CompatScan.py and this would return an output on the terminal or cmd
+
+
+#TODO #Tool Revamp
+- [ ] Enable the use of Internet Explorer
+- [ ] If Chrome is not downloaded, allow for automatic installation of Chrome.
+    - [ ] Check for installed Web Browsers
+- [ ] Extract ISO on a Temp folder to access setup.exe
+- [ ] Run the setup.exe with arguements in order for it be silently check if Windows 10 is compatible with the machine
