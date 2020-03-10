@@ -11,9 +11,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 
+
+opts = Options()
+opts.add_argument('user-agent=Chrome -- Mac')
 # driver = webdriver.Chrome('./chromedriver') for OSX
-driver = webdriver.Chrome('./chromedriver.exe') #for Windows
+driver = webdriver.Chrome(chrome_options=opts, executable_path='./chromedriver.exe') #for Windows
 # driver = webdriver.Safari()
 class AutomateWeb(object):
     
@@ -51,12 +55,10 @@ class AutomateWeb(object):
         driver.find_element_by_class_name('button button-long button-flat button-purple x-hidden-focus').click()
 
 #For Debugging since I switch platform between Windows and OSX
-class Check_OS():
-    def os_check(self):
-        if platform == 'win32':
-            print('Windows')
-
-        
+# class Check_OS():
+#     def os_check(self):
+#         if platform == 'win32':
+#             print('Windows')
 
 class Program(object):
 

@@ -15,5 +15,6 @@ Windows 10 Compat Scan is a tool used at work to check for Windows 7 machines th
 - [ ] Enable the use of Internet Explorer
 - [ ] If Chrome is not downloaded, allow for automatic installation of Chrome.
     - [ ] Check for installed Web Browsers
+- [x] If on windows, change network condition in order to download ISO
 - [ ] Extract ISO on a Temp folder to access setup.exe
 - [ ] Run the setup.exe with arguements in order for it be silently check if Windows 10 is compatible with the machine
